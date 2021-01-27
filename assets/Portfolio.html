@@ -56,39 +56,18 @@
           <div class="col-sm-6">
             <a href="https://lorjoh.github.io/Password-Generator"><img src="..\Password-Gen.jpg"
                 alt="Password-Generator" class="img-thumbnail"></a>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-              View
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+              data-placement="right" data-content="Password Generator.">
+              view
             </button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
-              aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="col-sm-6">
             <a href="https://lorjoh.github.io/myScheduler"><img src="..\myScheduler.jpg" alt="myScheduler"
                 class="img-thumbnail">
             </a>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-              Launch demo modal
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+              data-placement="right" data-content="Schedule Planner.">
+              view
             </button>
           </div>
         </div>
@@ -96,32 +75,48 @@
           <div class="col-sm-6">
             <a href="#"><img src="https://placehold.it/200x200" alt="..." class="img-thumbnail">
             </a>
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+              data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+              view
+            </button>
           </div>
           <div class="col-sm-6">
             <a href="#"><img src="https://placehold.it/200x200" alt="..." class="img-thumbnail">
             </a>
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+              data-placement="right" data-content="Vivamus
+              sagittis lacus vel augue laoreet rutrum faucibus.">
+              view
+            </button>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-6">
             <a href="#"><img src="https://placehold.it/200x200" alt="..." class="img-thumbnail">
             </a>
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+              data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+              view
+            </button>
           </div>
           <div class="col-sm-6">
             <a href="#"><img src="https://placehold.it/200x200" alt="..." class="img-thumbnail">
             </a>
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+              data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+              view
+            </button>
           </div>
         </div>
       </div>
     </div>
   </div>
-<script>
-  $('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-  })
-</script>
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    });
+  </script>
 </body>
 ​
 
 </html>
-
